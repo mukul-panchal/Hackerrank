@@ -1,20 +1,19 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-class Solution{
-    public static void main(String []argh){
+public class Solution {
+
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int t=in.nextInt();
-        for(int i=0;i<t;i++){
-            int a = in.nextInt();
-            int b = in.nextInt();
-            int n = in.nextInt();
-            for(int j=0;j<n;j++){
-                a+=b*(int)Math.pow(2,j);
-                System.out.print(a+" ");
-            }
-            System.out.println("");
+        int N = in.nextInt();
+        for(int i=1;i<11;i++){
+            int r=N*i;
+            System.out.println(""+N+" "+"x"+" "+i+" "+"="+ " "+r);
+            
+            
         }
-        in.close();
     }
 }
